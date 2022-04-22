@@ -6,15 +6,21 @@ import {
 } from 'react-router-dom';
 
 import theme from './style/theme';
-import Home from './page/home';
-import Test1 from './page/test1';
-import Test2 from './page/test2';
+import Home from './pages/home';
+import Test1 from './pages/test1';
+import Test2 from './pages/test2';
 
 /*
-  1. css PC, Mobile 미디어 쿼리 styled-components로 빼기
-  2. onResize Hook으로 빼기 (PC, Mobile 일 때 텍스트 다르게 구현)
+  1. css PC, Mobile 미디어 쿼리 styled-components로 빼기 (OK)
+  2. onResize Hook으로 빼기 (PC, Mobile 일 때 텍스트 다르게 구현) (OK)
   3. react-router-dom 기본
-    => 다른방식으로 구현해보기, ver6 적용, nested Router 있을땐 어떻게?
+    3-1) 다른방식으로 구현해보기(ver6 적용) (OK)
+    3-2) nested Router 있을땐 어떻게? => outlet 개념 적용해보기
+    3-3) component 마다 useNavigate 있는거 공통으로 뽑아내기
+  4. styled-component
+    4-1) attrs 사용해보기
+    4-2) button component 만들어서 다른 페이지에서 상속 개념 사용해보기 (OK)
+  5. prettier 적용해보기
 */
 
 interface Prop {
