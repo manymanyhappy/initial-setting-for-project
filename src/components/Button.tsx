@@ -3,11 +3,12 @@ import styled, { css } from 'styled-components';
 
 interface Props {
   onClickButton: () => void;
+  buttonName?: string;
 }
 
-const Button = ({ onClickButton }: Props) => (
+const Button = ({ onClickButton, buttonName }: Props) => (
   <ButtonContainer onClick={onClickButton}>
-    Click
+    {buttonName ? buttonName : 'Click'}
   </ButtonContainer>
 );
 
